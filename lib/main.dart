@@ -18,11 +18,16 @@ class _AppState extends State<App> {
           'home': (context) => App(),
           'secondPage': (context) => SecondPage(),
         },
-        // initialRoute: 'home',
         home: Scaffold(
-          appBar: AppBar(),
+          appBar: AppBar(
+            title: Text(
+              'Lab 2',
+              style: TextStyle(fontSize: 28),
+            ),
+          ),
           body: Container(
             child: ListView.builder(
+              padding: EdgeInsets.only(top: 20),
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                   child: Center(

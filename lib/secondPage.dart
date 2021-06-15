@@ -21,7 +21,10 @@ class SecondPage extends StatelessWidget {
     print(param);
     return Scaffold(
       appBar: AppBar(
-        title: Text(param),
+        title: Text(
+          param,
+          style: TextStyle(fontSize: 28),
+        ),
       ),
       body: Container(
         color: rederColor(param),
